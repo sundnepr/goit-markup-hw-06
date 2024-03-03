@@ -52,7 +52,8 @@ body {
 }
 
 .container {
-  width: 1158px;
+  width: 1158 px;
+  /* 1158 */
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -87,6 +88,7 @@ body {
   display: flex;
   gap: 40px;
   padding: 24px 0;
+  visibility: hidden;
 }
 
 .menu-item {
@@ -119,10 +121,7 @@ body {
 .addres-group {
   font-style: normal;
   margin-left: auto;
-}
-.header-addres {
-  display: flex;
-  gap: 40px;
+  visibility: hidden;
 }
 
 .addres-data {
@@ -146,6 +145,46 @@ body {
   color: #404bbf;
 }
 
+@media (min-width: 768px) {
+  .container {
+    /* width: 768x; */
+  }
+  .nav-menu {
+    visibility: visible;
+  }
+  .addres-group {
+    font-style: normal;
+    margin-left: auto;
+    visibility: visible;
+  }
+
+  .addres-data {
+    padding: 0px;
+  }
+  .nav-menu-btn{
+    visibility: hidden;
+  }
+}
+@media (min-width: 1058px) {
+  .container {
+     /* width: 1158px; */
+  }
+  .nav-menu {
+    visibility: visible;
+  }
+  .addres-group {
+    font-style: normal;
+    margin-left: auto;
+    visibility: visible;
+  }
+  .header-addres {
+    display: flex;
+    gap: 40px;
+  }
+   .nav-menu-btn{
+    visibility: hidden;
+}
+
 /* =======/Page Header styles ======= */
 
 /* =======section button =======*/
@@ -159,7 +198,7 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/dark-bg-mob.jpg);
 
   background-repeat: no-repeat;
   background-position: center;
@@ -203,6 +242,31 @@ body {
 .section-studio-button:focus {
   background: #404bbf;
 }
+@media (min-width: 768px) {
+   .section-studio {
+   background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/dark-bg-tab.jpg
+  }
+
+}
+
+@media (min-width: 1058px) {
+  .section-studio {
+   background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  }
+
+
+}
+
+
+
 /* =======/section button=======*/
 
 /* ======section benefits===== */
@@ -578,6 +642,7 @@ body {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  visibility: hidden;
 }
 
 .box-button-close {
