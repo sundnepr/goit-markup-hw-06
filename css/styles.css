@@ -52,11 +52,25 @@ body {
 }
 
 .container {
-  /* width: 1158 px; */
-  /* 1158 */
+  min-width: 320px;
   margin: 0 auto;
   padding: 0 15px;
 }
+
+@media screen and (min-width: 768){
+  .container{
+    width: 768px;
+  }  
+  .page-navigation{
+    display: none;
+  }
+}
+@media screen and (min-width: 1158){
+  .container{
+    width: 1158px;
+  }  
+}
+
 
 .header-container {
   display: flex;
@@ -84,11 +98,16 @@ body {
 .logo-studio {
   color: #2e2f42;
 }
+
+.nav-menu-btn{
+ display: none;
+}
+
 .nav-menu {
   display: flex;
   gap: 40px;
   padding: 24px 0;
-  visibility: hidden;
+  display: nones;
 }
 
 .menu-item {
@@ -121,7 +140,10 @@ body {
 .addres-group {
   font-style: normal;
   margin-left: auto;
-  visibility: hidden;
+}
+.header-addres {
+  display: flex;
+  gap: 40px;
 }
 
 .addres-data {
@@ -145,47 +167,23 @@ body {
   color: #404bbf;
 }
 
-/* @media (min-width: 768px) {
-  .container {
-    /* width: 768x; */
-/* }
-  .nav-menu {
-    visibility: visible;
-  }
-  .addres-group {
-    font-style: normal;
-    margin-left: auto;
-    visibility: visible;
-  }
+@media screen and (min-width: 768){
+  .container{
+    width: 768px;
+  }  
+}
+@media screen and (min-width: 1158){
+  .container{
+    width: 1158px;
+  }  
+}
 
-  .addres-data {
-    padding: 0px;
-  }
-  .nav-menu-btn{
-    visibility: hidden;
-  } */
 
-/* @media (min-width: 1058px) {
-  .container {
-     /* width: 1158px; */
-/* }
-  .nav-menu {
-    visibility: visible;
+@media screen and (max-widht: 768px){
+.nav-menu {
+    display: none;
   }
-  .addres-group {
-    font-style: normal;
-    margin-left: auto;
-    visibility: visible;
-  }
-  .header-addres {
-    display: flex;
-    gap: 40px;
-  }
-   .nav-menu-btn{
-    visibility: hidden;
-} */
-/* */
-
+}
 /* =======/Page Header styles ======= */
 
 /* =======section button =======*/
@@ -199,14 +197,14 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/dark-bg-mob.jpg);
+    url(../images/people-office.jpg);
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  /* max-width: 1440px; */
-  /* margin: 0 auto; */
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .section-studio-title {
@@ -221,7 +219,6 @@ body {
   margin-right: auto;
   margin-bottom: 48px;
 }
-
 .section-studio-button {
   font-weight: 500;
   font-size: 16px;
@@ -244,27 +241,6 @@ body {
 .section-studio-button:focus {
   background: #404bbf;
 }
-
-@media (min-width: 768px) {
-  .section-studio {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/dark-bg-tab.jpg);
-  }
-}
-
-@media (min-width: 1058px) {
-  .section-studio {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/people-office.jpg);
-  }
-}
-
 /* =======/section button=======*/
 
 /* ======section benefits===== */
@@ -273,7 +249,6 @@ body {
 }
 .benefits-list {
   display: flex;
-  flex-wrap: wrap;
   gap: 24px;
 }
 
@@ -295,15 +270,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* height: 112px; */
+  height: 112px;
   background-color: #f4f4fd;
   border-radius: 4px;
   margin-bottom: 8px;
-  visibility: hidden;
 }
 
 .benefits-list .item {
-  width: calc((100% - 72px) / 1);
+  width: calc((100% - 72px) / 4);
 }
 
 .benefits-list .item-title {
@@ -321,22 +295,6 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
 }
-@media (min-width: 768px) {
-  .benefits-list .item {
-    width: calc((100% - 72px) / 2);
-  }
-}
-
-@media (min-width: 1058px) {
-  .box-icon {
-    visibility: visible;
-  }
-
-  .benefits-list .item {
-    width: calc((100% - 72px) / 4);
-  }
-}
-
 /* =====/section benefits===== */
 
 /* =====section team ==== */
