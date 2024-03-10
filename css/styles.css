@@ -209,7 +209,7 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/dark-bg-mob.jpg);
+    url(../images/mobile/Dark-bg-min.jpg);
 
   background-repeat: no-repeat;
   background-position: center;
@@ -230,6 +230,7 @@ body {
   margin-right: auto;
   margin-bottom: 72px;
 }
+
 .section-studio-button {
   font-weight: 500;
   font-size: 16px;
@@ -252,6 +253,48 @@ body {
 .section-studio-button:focus {
   background: #404bbf;
 }
+
+@media only screen and (min-resolution: 192dpi) {
+  .section-studio {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/mobile/Dark-bg@2x-min.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-studio {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet/Dark-bg-min.jpg);
+  }
+   .section-studio-title {
+    max-width: 496px;
+}
+
+@media screen and (min-width: 1158px) {
+  .section-studio {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/desktop/people-office\ 1-min.jpg);
+  }
+}
+
+@media only screen and (min-resolution: 192dpi) and (min-width: 1158px) {
+  .section-studio {linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+    background-image: url("../images/desktop/people-office\ 1@2x-min.jpg");
+  }
+}
+
 /* =======/section button=======*/
 /* ======section benefits===== */
 /* .section-benefits {
