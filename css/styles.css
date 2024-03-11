@@ -209,7 +209,7 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/mobile/Dark-bg-min.jpg);
+    url(../images/mobile/Dark-bg.jpg);
 
   background-repeat: no-repeat;
   background-position: center;
@@ -260,22 +260,32 @@ body {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/mobile/Dark-bg@2x-min.jpg);
+      url(../images/mobile/Dark-bg@2x.jpg)
   }
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .section-studio {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/tablet/Dark-bg-min.jpg);
+      url(../images/tablet/Dark-bg.jpg);
   }
    .section-studio-title {
     max-width: 496px;
   }
 }
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .section-studio {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet/Dark-bg@2x.jpg)
+  }
+}
+
 
 @media screen and (min-width: 1158px) {
   .section-studio {
@@ -283,16 +293,17 @@ body {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/desktop/people-office\ 1-min.jpg);
+      url(../images/desktop/people-office.jpg);
   }
 }
 
 @media only screen and (min-resolution: 192dpi) and (min-width: 1158px) {
-  .section-studio {linear-gradient(
+   .section-studio {
+    background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-    background-image: url("../images/desktop/people-office\ 1@2x-min.jpg");
+      url(../images/desktop/people-office@2x.jpg);
   }
 }
 
@@ -388,7 +399,7 @@ body {
 
 /* =====/section benefits===== */
 /* =====section team ==== */
-/* .section-team {
+.section-team {
   background-color: #f4f4fd;
   padding: 96px 0;
 }
@@ -471,7 +482,32 @@ body {
 .social-net-link:hover,
 .social-net-link:focus {
   background-color: #404bbf;
-} */
+} 
+
+@media screen and (min-width: 768px) {
+
+  .section-team-list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section-team-list-item{
+    width: calc((100% - 206px) / 2);
+     margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+@media screen and (min-width: 1158px) {
+   .section-team-list-item{
+    width: calc((100% - 72px) / 4);
+  }
+}
 
 /* ======/section-team===== */
 
