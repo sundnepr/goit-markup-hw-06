@@ -436,6 +436,9 @@ body {
   background: #2e2f42;
   padding: 100px 0;
 }
+.loga {
+  padding: 0 0;
+}
 .logo-footer {
   display: inline-block;
   margin-bottom: 16px;
@@ -451,6 +454,7 @@ body {
 
 .logo-studio-footer {
   color: #f4f4fd;
+  padding: 0 0;
 }
 
 .logo-paragraf {
