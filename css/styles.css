@@ -1091,6 +1091,9 @@ body {
   margin-top: 72px;
   margin-bottom: 168px;
 }
+.mob-menu {
+  gap: 40px;
+}
 .mob-menu-item {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
