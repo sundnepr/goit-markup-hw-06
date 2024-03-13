@@ -266,7 +266,7 @@ body {
   background: #404bbf;
 }
 
-@media only screen and (min-resolution: 192dpi) {
+@media only screen and (min-resolution: 192dpi)  {
   .section-studio {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -282,7 +282,7 @@ body {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/tablet/Dark-bg.jpg);
+      url(../images/tablet/dark-bg.jpg);
   }
   .section-studio-title {
     max-width: 496px;
