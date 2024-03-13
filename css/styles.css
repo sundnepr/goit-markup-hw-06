@@ -161,6 +161,7 @@ body {
     color: #434455;
     display: block;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding-bottom: 12px;
   }
 
   .menu-item:hover,
@@ -206,6 +207,7 @@ body {
     display: flex;
     font-size: 16px;
     line-height: 1.5;
+    padding-bottom: 0;
   }
 }
 /* =======/Page Header styles ======= */
@@ -285,6 +287,9 @@ body {
       url(../images/tablet/dark-bg.jpg);
   }
   .section-studio-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
     max-width: 496px;
   }
 }
@@ -384,7 +389,9 @@ body {
   .benefits-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    flex-direction: row;
+    column-gap: 24px;
+    row-gap: 72px;
   }
   .benefits-list .item {
     width: calc((100% - 72px) / 2);
@@ -513,17 +520,13 @@ body {
 @media screen and (min-width: 768px) {
   .section-team-list {
     display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px;
-
-    margin-left: auto;
-    margin-right: auto;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: 32px;
   }
   .section-team-list-item {
-    width: calc((100% - 206px) / 2);
-    margin-left: auto;
-    margin-right: auto;
+    width: calc((100% - 24px) / 2);
   }
 }
 
@@ -532,6 +535,7 @@ body {
     padding: 120px 0;
   }
   .section-team-list-item {
+
   }
 }
 
@@ -660,11 +664,10 @@ body {
   display: flex;
   flex-wrap: nowrap;
   margin-bottom: 16px;
-  margin-left: auto;
-  margin-right: auto;
   padding: 0 0;
   align-items: center;
   text-align: center;
+  justify-content: center;
 }
 .logo-studio {
   font-family: "Raleway", sans-serif;
@@ -732,7 +735,7 @@ body {
 .footer-social-icon {
   fill: #f4f4fd;
 }
-.subscribe {
+.subscribe_footer{
   text-align: center;
 }
 
@@ -740,6 +743,34 @@ body {
 :focus {
   background-color: #31d0aa;
 }
+@media screen and (min-width: 768px) {
+  .footer-social{
+    flex-direction: row;
+  }
+  .logo-footer{
+    justify-content: left;
+  }
+  .social-text {
+    text-align: left;
+  }
+.subscribe_footer{
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+.myform{
+  display: flex;
+  flex-direction: row;
+  column-gap: 24px;
+}
+
+
+}
+
+@media screen and (min-width: 1158px) {
+  
+}
+
 /* ====== form ====== */
 .form-paragraf {
   margin-bottom: 16px;
@@ -1060,8 +1091,8 @@ body {
   }
 
   .mob-menu.is-open {
-    opacity: 1;
-    visibility: visible;
+    /* opacity: 1;
+    visibility: visible; */
   }
 
   /* .mob-menu-container {
